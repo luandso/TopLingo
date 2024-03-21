@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>TopLingo</title>
+</head>
+<body>
+    <div class="coluna-azul"></div>
+
+    <header>
+        <h1>TOPLingo</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="input-container">
+                <textarea id="textareaFrom" class="input-text" placeholder="Digite o texto para traduzir"></textarea>
+                <textarea id="textareaTo" class="input-text" placeholder="Tradução aparecerá aqui" readonly></textarea>
+            </div>
+            <div class="controls">
+                <div class="dropdown">
+                    <button id="dropdownBtn" class="dropbtn">Selecionar Idioma</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#" data-lang="en-US"><span class="flag usa"></span>Inglês</a>
+                        <a href="#" data-lang="es-ES"><span class="flag spain"></span>Espanhol</a>
+                        <!-- Adicione mais opções de idioma conforme necessário -->
+                    </div>
+                </div>
+                <button id="btnTranslate">Traduzir</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
